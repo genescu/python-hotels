@@ -17,7 +17,7 @@ A Python script that scrap hotel information from a website and saves it as a JS
 
 It uses the requests and BeautifulSoup modules to make requests to the website and parse the HTML content, respectively. 
 
-The dictionary_booking com function extracts information about hotels from the parsed HTML and creates instances of the hotel.Hotel class to store the information. 
+The dictionary_booking com function extracts information about hotels from the parsed HTML and creates instances of the 'hotel.Hotel' class to store the information. 
 
 The environment function determines whether to run the script in a live or development environment by specifying the URL of the website to scrape. 
 

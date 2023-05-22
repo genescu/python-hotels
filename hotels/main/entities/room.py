@@ -6,7 +6,7 @@ class Room:
     def __init__(self):
         self.adults = 0
         self.kids = 0
-        self.room_type = ''
+        self.room_type = None
 
     def get_adults(self):
         return self.adults
@@ -15,7 +15,7 @@ class Room:
 
     def set_adults(self, x):
         if x is not None:
-            x = int(fn.parser(x))
+            x = int(fn.parser(x,'init'))
             if x > 0:
                 self.adults = x
 
@@ -25,7 +25,7 @@ class Room:
     # setter method
 
     def set_kids(self, x):
-        x = int(fn.parser(x))
+        x = int(fn.parser(x,'init'))
         if x > 0:
             self.kids = x
 

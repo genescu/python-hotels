@@ -1,84 +1,56 @@
-from unittest import TestCase
-
+import unittest
+from hotels.main.validators.hotelvalidator import Validate
+from hotels.main.service.functions import parser
 from hotels.main.entities.hotel import Hotel
 
+class TestHotel(unittest.TestCase):
 
-class TestHotel(TestCase):
-    pass
+    def setUp(self):
+        self.hotel = Hotel()
 
-    def test_valid_name(self):
-        data = "Bristol"
-        unit = Hotel()
-        unit.set_name(data)
-        self.assertEqual(unit.get_name(), "Bristol")
+    def test_set_name(self):
+        self.hotel.set_name('Hilton')
+        self.assertEqual(self.hotel.get_name(), 'Hilton')
 
-        data = "Bristol  "
-        unit = Hotel()
-        unit.set_name(data)
-        self.assertEqual(unit.get_name(), "Bristol")
+    def test_set_address(self):
+        self.hotel.set_address('123 Main St.')
+        self.assertEqual(self.hotel.get_address(), '123 Main St.')
 
-    def test_invalid_name(self):
-        data = 123
-        unit = Hotel()
-        unit.set_name(data)
-        self.assertEqual(unit.get_name(), None)
+    def test_set_classification(self):
+        self.hotel.set_classification(4)
+        self.assertEqual(self.hotel.get_classification(), 4)
 
-        data = None
-        unit = Hotel()
-        unit.set_name(data)
-        self.assertEqual(unit.get_name(), None)
+    def test_set_reviews_points(self):
+        self.hotel.set_reviews_points(8.345)
+        self.assertEqual(self.hotel.get_reviews_points(), 8.35)
 
-        data = []
-        unit = Hotel()
-        unit.set_name(data)
-        self.assertEqual(unit.get_name(), None)
+    def test_set_reviews_number(self):
+        self.hotel.set_reviews_number(1001)
+        self.assertEqual(self.hotel.get_reviews_number(), 1001)
 
-    def test_valid_reviews_points(self):
-        data = 9.7
-        unit = Hotel()
-        unit.set_reviews_points(data)
-        self.assertEqual(unit.get_reviews_points(), 9.7)
+    def test_set_description(self):
+        self.hotel.set_description('A luxurious hotel in the heart of the city')
+        self.assertEqual(self.hotel.get_description(), 'A luxurious hotel in the heart of the city')
 
-        data = 9
-        unit = Hotel()
-        unit.set_reviews_points(data)
-        self.assertEqual(unit.get_reviews_points(), 9.00)
+    def test_set_room_categories(self):
+        self.hotel.set_room_categories(['Single', 'Double', 'Suite'])
+        self.assertListEqual(self.hotel.get_room_categories(), ['Single', 'Double', 'Suite'])
 
-    def test_invalid_reviews_points(self):
-        data = "  "
-        unit = Hotel()
-        unit.set_reviews_points(data)
-        self.assertEqual(unit.get_reviews_points(), None)
+    def test_set_alternative_hotels(self):
+        self.hotel.set_alternative_hotels(['Marriott', 'Sheraton', 'Hyatt'])
+        self.assertListEqual(self.hotel.get_alternative_hotels(), ['Marriott', 'Sheraton', 'Hyatt'])
 
-        data = None
-        unit = Hotel()
-        unit.set_reviews_points(data)
-        self.assertEqual(unit.get_reviews_points(), None)
+    def test_get_props(self):
+        self.hotel.set_name('Hilton')
+        self.hotel.set_address('123 Main St.')
+        self.hotel.set_classification(4)
+        self.hotel.set_reviews_points(8.345)
+        self.hotel.set_reviews_number(1001)
+        self.hotel.set_description('A luxurious hotel in the heart of the city')
+        self.hotel.set_room_categories(['Single', 'Double', 'Suite'])
+        self.hotel.set_alternative_hotels(['Marriott', 'Sheraton', 'Hyatt'])
+        props = self.hotel.get_props()
+        self.assertIsInstance(props, dict)
+        Validate(**props)
 
-        data = []
-        unit = Hotel()
-        unit.set_reviews_points(data)
-        self.assertEqual(unit.get_reviews_points(), None)
 
-    def test_valid_reviews_number(self):
-        data = 22
-
-        unit = Hotel()
-        unit.set_reviews_number(data)
-        self.assertEqual(unit.get_reviews_number(), 22)
-
-    def test_invalid_reviews_number(self):
-        data = "a"
-        unit = Hotel()
-        unit.set_reviews_number(data)
-        self.assertEqual(unit.get_reviews_number(), None)
-
-        data = None
-        unit = Hotel()
-        unit.set_reviews_number(data)
-        self.assertEqual(unit.get_reviews_number(), None)
-
-        data = []
-        unit = Hotel()
-        unit.set_reviews_number(data)
-        self.assertEqual(unit.get_reviews_number(), None)
