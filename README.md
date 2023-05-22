@@ -1,14 +1,16 @@
 # Python parser for booking.com
 
-Steps to run: 
+**How you can run:** 
 
 Firstly, you need to import the project.
 
-Next, set the environment to either' dev' or' live'.
+Next, set the environment to either 'dev' or 'live'.
 
 After that, navigate to the main folder and run the file named '**bookingcom.py**'. Once done, you will find a '**hotels.json**' file generated in the output folder.
 
 Additionally, the project also provides unit tests as a bonus feature.
+
+
 
 **Description**:
 
