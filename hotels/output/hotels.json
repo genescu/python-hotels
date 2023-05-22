@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Kempinski Hotel Bristol Berlin",
+    "address": "Kurfürstendamm 27, Charlottenburg-Wilmersdorf, 10719 Berlin, Germany",
+    "classification": 5,
+    "reviews_points": 8.3,
+    "reviews_number": 1401,
+    "description": "This 5-star hotel on Berlin’s Kurfürstendamm shopping street offers elegant rooms, an indoor pool and great public transport links. It is 600 metres from the Gedächtniskirche Church and Berlin Zoo. Kempinski Hotel Bristol Berlin offers air-conditioned rooms with large windows, modern bathrooms and international TV channels. Bathrobes are provided. Free WiFi is available in all areas and high-speed WiFi access can be booked at an additional cost. Gourmet cuisine is served in the popular Kempinski Grill. Reinhard's brasserie offer light cuisine and a terrace overlooking Kurfürstendamm. Guests can enjoy drinks in the Gobelin Halle lounge or in the Bristol Bar. Kempinski Bristol Berlin’s spa includes a sauna, steam room and gym. Massages and beauty treatments can also be booked here. The hotel's business centre can be used free of charge. Uhlandstraße Underground Station is just outside the Kempinski’s front door. The KaDeWe shopping mall is 2 stops away. We speak your language! This property has been on Booking.com since 17 May 2010. Hotel Rooms: 301, Hotel Chain: Kempinski",
+    "room_categories": [
+      {
+        "adults": 2,
+        "kids": 1,
+        "room_type": "Suite with Balcony"
+      },
+      {
+        "adults": 2,
+        "kids": 0,
+        "room_type": "Classic Double or Twin Room"
+      },
+      {
+        "adults": 3,
+        "kids": 0,
+        "room_type": "Superior Double or Twin Room"
+      },
+      {
+        "adults": 2,
+        "kids": 0,
+        "room_type": "Deluxe Double Room"
+      },
+      {
+        "adults": 2,
+        "kids": 0,
+        "room_type": "Deluxe Business Suite"
+      },
+      {
+        "adults": 3,
+        "kids": 0,
+        "room_type": "Junior Suite"
+      },
+      {
+        "adults": 3,
+        "kids": 0,
+        "room_type": "Family Room"
+      }
+    ],
+    "alternative_hotels": [
+      {
+        "name": "Hotel Adlon Kempinski Berlin",
+        "address": null,
+        "classification": 5,
+        "reviews_points": 9.4,
+        "reviews_number": 1933,
+        "description": "The quintessence of luxury lodging, the Adlon is a legendary 5-star hotel situated in Berlin’s Mitte, beside the Brandenburg Gate.",
+        "room_categories": [],
+        "alternative_hotels": []
+      },
+      {
+        "name": "Grand Hyatt Berlin",
+        "address": null,
+        "classification": 5,
+        "reviews_points": 9.1,
+        "reviews_number": 1460,
+        "description": "This 5-star hotel has a large rooftop spa and pool with spectacular views of Berlin.",
+        "room_categories": [],
+        "alternative_hotels": []
+      },
+      {
+        "name": "Sofitel Berlin Kurfürstendamm",
+        "address": null,
+        "classification": 5,
+        "reviews_points": 9.0,
+        "reviews_number": 1497,
+        "description": "Just 100 metres from the Kurfürstendamm boulevard, this 5-star design hotel offers air-conditioned rooms, free Wi-Fi and a French restaurant. Guests have free use of the spa and gym.",
+        "room_categories": [],
+        "alternative_hotels": []
+      },
+      {
+        "name": "Hilton Berlin",
+        "address": null,
+        "classification": null,
+        "reviews_points": 8.5,
+        "reviews_number": 2700,
+        "description": "This centrally located hotel on Berlin’s historic Gendarmenmarkt Square features luxurious rooms, an exclusive spa and 2 restaurants with stunning views of the German Cathedral.",
+        "room_categories": [],
+        "alternative_hotels": []
+      }
+    ]
+  }
+]
