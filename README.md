@@ -1,6 +1,7 @@
-# Python parser for booking.com
+#  Documentation for Booking.com's Python Parsing Tool
 
-**How you can run:** 
+
+**Instructions on executing the script** 
 
 Firstly, you need to import the project.
 
@@ -12,7 +13,7 @@ Additionally, the project also provides unit tests as a bonus feature.
 
 
 
-**Description**:
+**Description**
 
 
 A Python script that scrap hotel information from a website and saves it as a JSON file. 
