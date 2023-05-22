@@ -3,6 +3,7 @@ from hotels.main.validators.hotelvalidator import Validate
 from hotels.main.service.functions import parser
 from hotels.main.entities.hotel import Hotel
 
+
 class TestHotel(unittest.TestCase):
 
     def setUp(self):
@@ -54,3 +55,5 @@ class TestHotel(unittest.TestCase):
         Validate(**props)
 
 
+if __name__ == '__main__':
+    unittest.main()
