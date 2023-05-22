@@ -27,14 +27,14 @@ def parser(x, t=None):
     return x
 
 
-def is_float(element: any) -> bool:
-    # If you expect None to be passed:
-    if element is None:
-        return False
-    if isinstance(element, list):
-        return False
+def is_float(value: any):
     try:
-        float(element)
-        return True
+        if isinstance(value, str):
+            value = float(value)
+        elif isinstance(value, list):
+            value = [float(v) for v in value]
+        else:
+            value = float(value)
+        return value
     except ValueError:
-        return False
+        return None

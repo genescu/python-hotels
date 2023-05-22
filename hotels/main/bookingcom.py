@@ -132,7 +132,8 @@ def dictionary_bookingcom(soup):
 
 def environment(env):
     if env == 'live':
-        base_url = 'https://hotels.toscrape.com/catalogue/page-1.html'
+        # Enter the url of website
+        base_url = 'https://www.booking.com/hotel/de/kempinskibristolberlin.en-gb.html'
         # requests.get(url) returns a response that is saved
         # in a response object called page.
         page = requests.get(base_url)
@@ -150,7 +151,6 @@ def environment(env):
 
 # Main Function
 if __name__ == '__main__':
-    # Enter the url of website
 
     env = 'dev'
 
