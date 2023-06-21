@@ -1,2 +1,0 @@
-2023-05-22 12:10:47+0200 [-] Log opened.
-2023-05-22 12:10:47+0200 [-] /home/wts/.local/lib/python3.6/site-packages/OpenSSL/_util.py:6: cryptography.utils.CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography. The next release of cryptography will remove support for Python 3.6.
